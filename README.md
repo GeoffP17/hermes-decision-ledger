@@ -1,4 +1,28 @@
-# Decision Ledger for Hermes
+# Decision Ledger
+
+**What you agreed. Nothing extra.**
+
+![Decision Board running inside the official Hermes web dashboard](docs/decision-board-preview.jpg)
+
+*Actual isolated Hermes dashboard with a test proposal. No user approval was created.*
+
+Keep exact project scope, conditions and human confirmation receipts across Hermes sessions. A proposal is a possibility. A confirmed receipt records what the operator reviewed.
+
+## New in 0.3.2: Decision Board
+
+A searchable, read-only board in the **Hermes web dashboard** brings your receipts into view: clear status badges, exact scope, conditions and a decision trail. The board never approves, edits or initializes a ledger. Confirmations still require the separate foreground operator console and its existing checks.
+
+Install the plugin using the normal Hermes plugin workflow, enable it, and open `hermes dashboard`. Look for **Decision Ledger**. The board targets the web dashboard plugin API; native Hermes Desktop/HP installation has not been verified. Existing CLI/tool usage remains available.
+
+Ask explicitly: “Use Decision Ledger to draft a proposal for personal-website / hosting: Research free hosting options only. Creating accounts, spending money, deploying, and publishing are excluded.” Review in the bundled operator console, then ask a fresh session to retrieve the exact receipt.
+
+**Honest limits:** capture and recall depend on the assistant using the tool. This is a decision record, not an execution firewall or human identity proof. Missing receipts do not erase direct user instructions. Conditions are operator attestations, not independently verified results. Search covers loaded records; use Load more for older records. The board needs the host dashboard's authentication and displays private scope text to that authenticated session. It does not serve a public website.
+
+Verified in an isolated official Hermes dashboard (source `396fe52b`): real plugin discovery, authenticated API, exact proposed scope, filters/search and responsive layout. Unauthenticated receipt requests return 401; viewing/filtering left database bytes unchanged. No model calls or user approvals were made. Native Desktop/HP installation remains unverified. See [validation evidence](docs/VALIDATION.md).
+
+---
+
+## Operator workflow and safeguards
 
 **“I approved research. Why does the agent think I approved deployment?”**
 

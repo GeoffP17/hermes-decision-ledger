@@ -1,5 +1,5 @@
 name: decision-ledger
-version: 0.3.1
+version: 0.3.2
 author: "GeoffP17 and contributors"
 license: MIT
 requires_hermes: ">=0.22.4"

@@ -20,7 +20,7 @@ PLUGIN_ROOT = Path(__file__).resolve().parent
 DB_PATH = PLUGIN_ROOT.parent.parent / 'plugin-data' / 'decision-ledger' / 'ledger.sqlite3'
 UID = os.getuid()
 EXPECTED = {
-    'plugin.yaml': 'b4ca08021111b4ada9837cb3c9f6624d70c9446881580de65a7768cb263ec0fb',
+    'plugin.yaml': '01e02c9733c2bdfc9cdd1c557922e309ec40432f5b7408e7225e50ea76d0c39c',
     'decision_ledger/core.py': 'b485d4de3c4ae332dbdc656b2cf8aa23e6999f308b76ffe7c5967aa6dcefa404',
     'decision_ledger/plugin.py': '3c397a4739a96aa23876db3321e540876f9445df1274b502033103016f76b5ba',
 }

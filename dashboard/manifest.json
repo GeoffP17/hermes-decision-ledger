@@ -1,0 +1,1 @@
+{"name":"decision-ledger","label":"Decision Ledger","description":"What you agreed. Nothing extra. Exact scope, human receipts and decision history.","icon":"FileCheck","version":"0.3.2","tab":{"path":"/decision-ledger","position":"end"},"entry":"board.js","css":"board.css","api":"plugin_api.py"}
