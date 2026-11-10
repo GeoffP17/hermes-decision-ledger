@@ -1,0 +1,17 @@
+name: decision-ledger
+version: 0.3.1
+author: "GeoffP17 and contributors"
+license: MIT
+requires_hermes: ">=0.22.4"
+provides_tools:
+  - decision_ledger
+description: >-
+  Local decision receipts: models draft/read exact project scope, conditions,
+  replacements and revocations across Hermes sessions. Human operators review
+  and confirm through a separate bundled foreground-only operator_console.py,
+  not through gateway /decisions mutations. On Hermes 0.22.4 the gateway CLI
+  routes /decisions through platform=local and mutation is intentionally refused.
+  SQLite profile data; no network, shell subprocess, model calls, credentials or
+  background jobs from the plugin. Historical evidence is an unconfirmed
+  interpretation until separately checked. Not a sandbox, human identity
+  authenticator or execution permission gate; same-UID Python/DB access can bypass.
